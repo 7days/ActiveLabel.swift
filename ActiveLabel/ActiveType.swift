@@ -33,7 +33,7 @@ public enum ActiveType {
     case email
     case custom(pattern: String)
     
-    var pattern: String {
+    public var pattern: String {
         switch self {
         case .mention: return RegexParser.mentionPattern
         case .hashtag: return RegexParser.hashtagPattern
